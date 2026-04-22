@@ -3,7 +3,7 @@ EAPI=8
 DESCRIPTION="Professional Terminal-free Package Manager for Gentoo"
 HOMEPAGE="https://github.com/finskidomek/portager"
 # Link do Twojego drugiego repozytorium ze źródłami
-SRC_URI="https://github.com/archive/refs/heads/main.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/finskidomek/portager/archive/refs/heads/main.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
