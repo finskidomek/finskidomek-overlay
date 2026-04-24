@@ -27,14 +27,17 @@ BDEPEND="virtual/pkgconfig"
 src_compile() {
     emake
 }
-
 src_install() {
-    # 1. Instalacja programu binarnego
+    # 1. Instalacja programu binarnego do /usr/bin/
     dobin portager
 
-    # 2. Instalacja Twojej ikony
+    # 2. Instalacja ikony do /usr/share/icons/hicolor/...
     doicon "${S}/portager.png"
 
-    # 3. Instalacja pliku skrótu do menu
+    # 3. Instalacja pliku menu do /usr/share/applications/
     domenu "${S}/portager.desktop"
+
+    # 4. Instalacja pliku tła do globalnego folderu /usr/share/portager/
+    insinto /usr/share/portager
+    doins "${S}/background.png"
 }
