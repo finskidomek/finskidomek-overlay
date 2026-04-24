@@ -37,7 +37,8 @@ src_install() {
     # 3. Instalacja pliku menu do /usr/share/applications/
     domenu "${S}/portager.desktop"
 
-    # 4. Instalacja pliku tła do globalnego folderu /usr/share/portager/
+    # 4. Instalacja plików graficznych (tło i kod QR) do folderu /usr/share/portager/
     insinto /usr/share/portager
     doins "${S}/background.png"
+    doins "${S}/qrcode.png"
 }
